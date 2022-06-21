@@ -1,0 +1,74 @@
+{
+    "pets": [
+    {
+      "id": "1",
+      "category": "Cats",
+      "name": "Charlie",
+      "image": "https://i.pinimg.com/originals/f3/36/f4/f336f483d30551426051ce690b8d2d68.gif",
+      "images": {
+          "image1": "https://cdn.britannica.com/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg?q=60",
+          "image2": "https://media.newyorker.com/photos/590971712179605b11ad7a88/4:3/w_1787,h_1340,c_limit/Jabr-AreCatsDomesticated.jpg",
+          "image3": "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
+      },
+      "description": "My cat is fun and very interesting to be with. She loves kids and she's expectant",
+      "rating": 4.5,
+      "likes": 115
+    },
+    {
+      "id": "2",
+      "category": "Dogs",
+      "name": "Bella",
+      "image": "https://media2.giphy.com/media/cjbxJXhNXDMjhlr1S8/giphy.gif",
+      "images": {
+        "image1": "https://images.pexels.com/photos/2318990/pexels-photo-2318990.jpeg?cs=srgb&dl=pexels-mithul-varshan-2318990.jpg&fm=jpg",
+        "image2": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*",
+        "image3": "https://media.istockphoto.com/photos/beagle-5-years-old-sitting-in-front-of-white-background-picture-id962855368?k=20&m=962855368&s=612x612&w=0&h=hVGDbK_fz847oEhHHPcD-sTmMxg2Zko09iQbfCxVZpM="
+      },
+      "description": "My cat is fun and very interesting to be with. She loves kids and she's expectant",
+      "rating": 4.8,
+      "likes": 145
+    },
+    {
+      "id": "3",
+      "category": "Cats",
+      "name": "Kristin",
+      "image": "https://www.icegif.com/wp-content/uploads/cat-icegif-11.gif",
+      "images": {
+        "image1": "https://cdn.britannica.com/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg?q=60",
+        "image2": "https://media.newyorker.com/photos/590971712179605b11ad7a88/4:3/w_1787,h_1340,c_limit/Jabr-AreCatsDomesticated.jpg",
+        "image3": "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
+      },
+      "description": "My cat is fun and very interesting to be with. She loves kids and she's expectant",
+      "rating": 4.4,
+      "likes": 90
+    },
+    {
+      "id": "4",
+      "category": "Dogs",
+      "name": "Jill",
+      "image": "https://media1.giphy.com/media/QxqqwXQuSWufNazWWU/giphy-downsized-large.gif",
+      "images": {
+          "image1": "https://images.pexels.com/photos/2318990/pexels-photo-2318990.jpeg?cs=srgb&dl=pexels-mithul-varshan-2318990.jpg&fm=jpg",
+          "image2": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*",
+          "image3": "https://media.istockphoto.com/photos/beagle-5-years-old-sitting-in-front-of-white-background-picture-id962855368?k=20&m=962855368&s=612x612&w=0&h=hVGDbK_fz847oEhHHPcD-sTmMxg2Zko09iQbfCxVZpM="
+      },
+      "description": "My cat is fun and very interesting to be with. She loves kids and she's expectant",
+      "rating": 3.9,
+      "likes": 100
+    },
+    {
+      "id": "5",
+      "category": "Cats",
+      "name": "Kettie",
+      "image": "https://media.glamour.com/photos/580e1edafa71013257a9180f/master/w_320%2Cc_limit/giphy%2520(2).gif",
+      "images": {
+        "image1": "https://cdn.britannica.com/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg?q=60",
+        "image2": "https://media.newyorker.com/photos/590971712179605b11ad7a88/4:3/w_1787,h_1340,c_limit/Jabr-AreCatsDomesticated.jpg",
+        "image3": "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
+      },
+      "description": "My cat is fun and very interesting to be with. She loves kids and she's expectant",
+      "rating": 4,
+      "likes": 125
+    }
+    ]
+  }
