@@ -1,5 +1,6 @@
 //Rate my Pet  by Brian
 
+
 const renderDogImages = (dog) => {
   const images = document.getElementById("slide")
   const img = document.createElement("img")
@@ -7,13 +8,23 @@ const renderDogImages = (dog) => {
   img.src = dog.image
 
   img.addEventListener("click", (e) => {
+    const name = document.getElementById("name")
+    name.innerText = dog.name
+
+    const details = document.querySelector("#pet-details")
+    details.innerHTML = `
+    <li>Breed: <span>${dog.breed}</span></li>
+    <li>Breed: <span>${dog.sex}</span></li>
+    <li>Breed: <span>${dog.age}</span></li>
+    
+    `
     const slide = document.getElementById("image-slide")
     slide.innerHTML = `
     <img src=${dog.images.image1}>
     <img src=${dog.images.image2}>
     <img src=${dog.images.image3}>
     `
-
+    
   })
 
 }
@@ -28,6 +39,16 @@ const renderCatImages = (cat) => {
   img.src = cat.image
 
   img.addEventListener("click", (e) => {
+    const name = document.getElementById("name")
+    name.innerText = cat.name
+
+    const details = document.querySelector("#pet-details")
+    details.innerHTML = `
+    <li>Breed: <span>${cat.breed}</span></li>
+    <li>Breed: <span>${cat.sex}</span></li>
+    <li>Breed: <span>${cat.age}</span></li>
+    
+    `
     const slide = document.getElementById("image-slide")
     slide.innerHTML = `
     <img src=${cat.images.image1}>
