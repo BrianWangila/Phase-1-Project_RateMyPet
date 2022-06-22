@@ -1,6 +1,5 @@
 //Rate my Pet  by Brian
 
-
 const renderDogImages = (dog) => {
   const images = document.getElementById("slide")
   const img = document.createElement("img")
@@ -25,6 +24,19 @@ const renderDogImages = (dog) => {
     <img src=${dog.images.image3}>
     `
     
+    document.getElementById("rating").innerText = dog.rating
+    document.getElementById("like").innerText = dog.likes
+
+    //add event listener to rate button
+    const rate = document.getElementById("rate")
+    rate.addEventListener("click", (e) => {
+      console.log("like")
+      const inputRate = document.getElementById("input")
+      inputRate.innerText = e.target.input.value
+    })
+
+
+
   })
 
 }
@@ -55,6 +67,9 @@ const renderCatImages = (cat) => {
     <img src=${cat.images.image2}>
     <img src=${cat.images.image3}>
     `
+
+    document.getElementById("rating").innerText = cat.rating
+    document.getElementById("like").innerText = cat.likes
 
   })
 
