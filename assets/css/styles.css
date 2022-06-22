@@ -87,7 +87,7 @@ body {
 .slide img {
   width: 15vw;
   height: 20vh;
-  margin-top: 5px;
+  margin-top: 10px;
 
 }
 
@@ -113,11 +113,8 @@ body {
   background-color: azure;
   padding: 10px;
   border-radius: 20px;
-  /* display: flex; */
-  /* flex-direction: column; */
 
 }
-
 
 
 form input {
@@ -125,8 +122,19 @@ form input {
   margin-top: 2px;
 }
 
+.image-slide {
+  background-color: rgb(247, 196, 196);
+  display: flex;
+  width: 26vw;
+  overflow-x: scroll;
+
+}
+
 .body .right img {
-  width: 25vw;
+  /* width: 50vw; */
+  height: 20vh;
+  margin-right: 10px;
+  /* border: 1px solid red; */
 
 }
 
@@ -164,6 +172,10 @@ form input {
   border-radius: 5px;
   border: 1px solid rgb(184, 181, 181);
 
+}
+
+#heart {
+  font-size: 40px;
 }
 
 .card button {
