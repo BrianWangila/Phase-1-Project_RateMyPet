@@ -5,10 +5,17 @@
 
 }
 
+button {
+  color: white;
+  background-color: rgb(148, 31, 31);
+  border: none;
+  border-radius: 5px;
+}
+
 body {
   width: 80vw;
   margin: auto;
-
+  
 }
 
 .header {
@@ -45,7 +52,7 @@ body {
   display: flex;
   background-color: antiquewhite;
   padding: 2vh;
-  height: 50vh;
+  min-height: 50vh;
   margin-bottom: 4vh;
 
 }
@@ -57,18 +64,120 @@ body {
 
 }
 
+.left-section .images {
+  background-color: azure;
+  padding: 2vh;
+  margin-top: 5px;
+
+}
+
+.cats, .dogs {
+  text-align: center;
+
+}
+
+.images .slide {
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.slide img {
+  width: 15vw;
+  height: 20vh;
+  margin-top: 5px;
+
+}
+
 .body .right {
   padding: 5vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-left: 5vw;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.right .card {
+  background-color:azure;
+  padding: 10px;
+  margin-bottom: 2vh;
+
+}
+
+.form form {
+  background-color: azure;
+  padding: 10px;
+  border-radius: 20px;
+  /* display: flex; */
+  /* flex-direction: column; */
 
 }
 
 
 
+form input {
+  padding: 5px;
+  margin-top: 2px;
+}
 
+.body .right img {
+  width: 25vw;
 
+}
+
+.right h4 {
+  padding: 1vh;
+  font-weight: 500;
+
+}
+
+.right .pet-details ul li {
+  list-style: none;
+  font-size: 12px;
+  padding: 2px;
+
+}
+
+.pet-details span, .card h4 span {
+  font-weight: 600;
+
+}
+
+.right .card .p {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  color: rgb(180, 33, 33);
+  font-weight: 700;
+  padding: 1vh;
+
+}
+
+.input input {
+  width: 4vw;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(184, 181, 181);
+
+}
+
+.card button {
+  padding: 7px;
+  margin-top: 10px;
+
+}
+
+.input button, form button {
+  padding: 5px;
+  margin-right: 1vw;
+  margin-top: 5px;
+  
+}
 
 footer {
   display: flex;
@@ -83,6 +192,7 @@ footer {
 footer .creator {
   font-size: 13px;
   padding: 3px;
+
 }
 
 footer .socials ul li {
@@ -90,4 +200,5 @@ footer .socials ul li {
   list-style: none;
   padding-right: 2vw;
   padding-top: 2vh;
+
 }
