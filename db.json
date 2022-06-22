@@ -1,106 +1,98 @@
 {
-    "dogs": [
-    
-        {
-          "id": "2",
-          "name": "Bella",
-          "breed": "German Shepherd",
-          "age": "4 years",
-          "sex": "female",
-          "image": "https://media2.giphy.com/media/cjbxJXhNXDMjhlr1S8/giphy.gif",
-          "images": {
-            "image1": "https://images.pexels.com/photos/2318990/pexels-photo-2318990.jpeg?cs=srgb&dl=pexels-mithul-varshan-2318990.jpg&fm=jpg",
-            "image2": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*",
-            "image3": "https://media.istockphoto.com/photos/beagle-5-years-old-sitting-in-front-of-white-background-picture-id962855368?k=20&m=962855368&s=612x612&w=0&h=hVGDbK_fz847oEhHHPcD-sTmMxg2Zko09iQbfCxVZpM="
-          },
-          "rating": 4.8,
-          "likes": 145
-        },
-    
-        {
-          "id": "4",
-          "name": "Jill",
-          "breed": "Bulldog",
-          "age": "3.7 years",
-          "sex": "male",
-          "image": "https://media1.giphy.com/media/QxqqwXQuSWufNazWWU/giphy-downsized-large.gif",
-          "images": {
-              "image1": "https://thumbs.dreamstime.com/b/golden-retriever-dog-21668976.jpg",
-              "image2": "https://i.insider.com/5484d9d1eab8ea3017b17e29?width=600&format=jpeg&auto=webp",
-              "image3": "https://scx2.b-cdn.net/gfx/news/hires/2018/2-dog.jpg"
-          },
-          "description": "My cat is fun and very interesting to be with. She loves kids and she's expectant",
-          "rating": 3.9,
-          "likes": 100
-        },
-    
-        {
-          "id": "5",
-          "name": "Jillian",
-          "breed": "Chihuahua",
-          "age": "2 years",
-          "sex": "female",
-          "image": "https://media1.popsugar-assets.com/files/thumbor/ibziASZ2KcdfVMXGiq2R-mrUKLk/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2015/03/23/728/n/1922507/50df4dbbaf1a6da3_giphy-6/i/itty-bitty-tail.gif",
-          "images": {
-            "image1": "https://cdn.cnn.com/cnnnext/dam/assets/201030094143-stock-rhodesian-ridgeback-super-tease.jpg",
-            "image2": "https://www.dailyecho.co.uk/resources/images/9427262?type=responsive-gallery-fullscreen",
-            "image3": "https://i.pinimg.com/originals/c2/40/ab/c240ab820e9909ad322f9322a0c14a30.jpg"
-          },
-          "description": "My cat is fun and very interesting to be with. She loves kids and she's expectant",
-          "rating": 4,
-          "likes": 125
-        }
+  "dogs": [
+    {
+      "id": "2",
+      "name": "Bella",
+      "breed": "German Shepherd",
+      "age": "4 years",
+      "sex": "female",
+      "image": "https://media2.giphy.com/media/cjbxJXhNXDMjhlr1S8/giphy.gif",
+      "images": {
+        "image1": "https://images.pexels.com/photos/2318990/pexels-photo-2318990.jpeg?cs=srgb&dl=pexels-mithul-varshan-2318990.jpg&fm=jpg",
+        "image2": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*",
+        "image3": "https://media.istockphoto.com/photos/beagle-5-years-old-sitting-in-front-of-white-background-picture-id962855368?k=20&m=962855368&s=612x612&w=0&h=hVGDbK_fz847oEhHHPcD-sTmMxg2Zko09iQbfCxVZpM="
+      },
+      "rating": 4.8,
+      "likes": 145
+    },
+    {
+      "id": "4",
+      "name": "Jill",
+      "breed": "Bulldog",
+      "age": "3.7 years",
+      "sex": "male",
+      "image": "https://media1.giphy.com/media/QxqqwXQuSWufNazWWU/giphy-downsized-large.gif",
+      "images": {
+        "image1": "https://thumbs.dreamstime.com/b/golden-retriever-dog-21668976.jpg",
+        "image2": "https://i.insider.com/5484d9d1eab8ea3017b17e29?width=600&format=jpeg&auto=webp",
+        "image3": "https://scx2.b-cdn.net/gfx/news/hires/2018/2-dog.jpg"
+      },
+      "description": "My cat is fun and very interesting to be with. She loves kids and she's expectant",
+      "rating": 3.9,
+      "likes": 100
+    },
+    {
+      "id": "5",
+      "name": "Jillian",
+      "breed": "Chihuahua",
+      "age": "2 years",
+      "sex": "female",
+      "image": "https://media1.popsugar-assets.com/files/thumbor/ibziASZ2KcdfVMXGiq2R-mrUKLk/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2015/03/23/728/n/1922507/50df4dbbaf1a6da3_giphy-6/i/itty-bitty-tail.gif",
+      "images": {
+        "image1": "https://cdn.cnn.com/cnnnext/dam/assets/201030094143-stock-rhodesian-ridgeback-super-tease.jpg",
+        "image2": "https://www.dailyecho.co.uk/resources/images/9427262?type=responsive-gallery-fullscreen",
+        "image3": "https://i.pinimg.com/originals/c2/40/ab/c240ab820e9909ad322f9322a0c14a30.jpg"
+      },
+      "description": "My cat is fun and very interesting to be with. She loves kids and she's expectant",
+      "rating": 4,
+      "likes": 125
+    }
   ],
-
-
   "cats": [
-      
-        {
-          "id": "1",
-          "name": "Charlie",
-          "breed": "siamese",
-          "age": "10 months",
-          "sex": "male",
-          "image": "https://i.pinimg.com/originals/f3/36/f4/f336f483d30551426051ce690b8d2d68.gif",
-          "images": {
-              "image1": "https://cdn.britannica.com/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg?q=60",
-              "image2": "https://media.newyorker.com/photos/590971712179605b11ad7a88/4:3/w_1787,h_1340,c_limit/Jabr-AreCatsDomesticated.jpg",
-              "image3": "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
-          },
-          "rating": 4.5,
-          "likes": 115
-        },
-
-        {
-          "id": "3",
-          "name": "Kristin",
-          "breed": "Bengal cat",
-          "age": "3 months",
-          "sex": "Female",
-          "image": "https://www.icegif.com/wp-content/uploads/cat-icegif-11.gif",
-          "images": {
-            "image1": "https://www.treehugger.com/thmb/6L9fqLaIt1e4p0_t1KruzzwugMg=/3552x2217/filters:fill(auto,1)/GettyImages-593450425-5176c57c7b77417f9dd01dfb43827e7b.jpg",
-            "image2": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/1200px-Cat_November_2010-1a.jpg",
-            "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAe_3wLwRaRiRr1uOLUY92pe9tmsYU_R6OVdV93q7PHU5aN1V-DV5u9iF8-FHxtyr3oCI&usqp=CAU"
-          },
-          "rating": 4.4,
-          "likes": 90
-        },
-
-        {
-          "id": "5",
-          "name": "Kettie",
-          "breed": "Persian Cat",
-          "age": "2 years",
-          "sex": "male",
-          "image": "https://img2.thejournal.ie/inline/1130935/original/?width=320&version=1130935",
-          "images": {
-            "image1": "https://images.unsplash.com/photo-1531040630173-7cfb894c8eaa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2hpdGUlMjBjYXRzfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
-            "image2": "https://blog.ferplast.com/wp-content/uploads/2019/07/owning-a-white-cat-5b1b91a318ba9-1024x683.jpg",
-            "image3": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F08%2F15%2Fwhite-munchkin-cat_150890825-2000.jpg"
-          },
-          "rating": 4,
-          "likes": 125
-        }
+    {
+      "id": "1",
+      "name": "Charlie",
+      "breed": "siamese",
+      "age": "10 months",
+      "sex": "male",
+      "image": "https://i.pinimg.com/originals/f3/36/f4/f336f483d30551426051ce690b8d2d68.gif",
+      "images": {
+        "image1": "https://cdn.britannica.com/91/181391-050-1DA18304/cat-toes-paw-number-paws-tiger-tabby.jpg?q=60",
+        "image2": "https://media.newyorker.com/photos/590971712179605b11ad7a88/4:3/w_1787,h_1340,c_limit/Jabr-AreCatsDomesticated.jpg",
+        "image3": "https://cdn.britannica.com/39/7139-050-A88818BB/Himalayan-chocolate-point.jpg"
+      },
+      "rating": 4.5,
+      "likes": 115
+    },
+    {
+      "id": "3",
+      "name": "Kristin",
+      "breed": "Bengal cat",
+      "age": "3 months",
+      "sex": "Female",
+      "image": "https://www.icegif.com/wp-content/uploads/cat-icegif-11.gif",
+      "images": {
+        "image1": "https://www.treehugger.com/thmb/6L9fqLaIt1e4p0_t1KruzzwugMg=/3552x2217/filters:fill(auto,1)/GettyImages-593450425-5176c57c7b77417f9dd01dfb43827e7b.jpg",
+        "image2": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/1200px-Cat_November_2010-1a.jpg",
+        "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAe_3wLwRaRiRr1uOLUY92pe9tmsYU_R6OVdV93q7PHU5aN1V-DV5u9iF8-FHxtyr3oCI&usqp=CAU"
+      },
+      "rating": 4.4,
+      "likes": 90
+    },
+    {
+      "id": "5",
+      "name": "Kettie",
+      "breed": "Persian Cat",
+      "age": "2 years",
+      "sex": "male",
+      "image": "https://img2.thejournal.ie/inline/1130935/original/?width=320&version=1130935",
+      "images": {
+        "image1": "https://images.unsplash.com/photo-1531040630173-7cfb894c8eaa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2hpdGUlMjBjYXRzfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+        "image2": "https://blog.ferplast.com/wp-content/uploads/2019/07/owning-a-white-cat-5b1b91a318ba9-1024x683.jpg",
+        "image3": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F08%2F15%2Fwhite-munchkin-cat_150890825-2000.jpg"
+      },
+      "rating": 4,
+      "likes": 125
+    }
   ]
 }

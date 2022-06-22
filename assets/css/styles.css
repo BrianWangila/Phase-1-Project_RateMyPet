@@ -176,6 +176,12 @@ form input {
 
 #heart {
   font-size: 40px;
+
+}
+
+.input a {
+  text-decoration: none;
+  color: rgb(163, 154, 154);
 }
 
 .card button {

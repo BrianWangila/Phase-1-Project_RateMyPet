@@ -32,15 +32,18 @@ const renderDogImages = (dog) => {
     rate.addEventListener("click", (e) => {
       console.log("like")
       const inputRate = document.querySelector("#rating")
-      inputRate.innerHTML = e.target.inputs.value
+      inputRate.innerHTML = `${e.target.inputs.value}`
     })
 
     const like = document.querySelector("#heart")
     like.addEventListener("click", (e) => {
+      e.preventDefault()
       console.log("liker")
+      const liker = document.getElementById("like")
+      liker.innerText = dog.likes + 1
+      like.style.color = "red"
 
     })
-
 
   })
 
@@ -83,6 +86,41 @@ const renderCatImages = (cat) => {
 
 
 
+//add new pet
+const renderNewPetToServer = () => {
+  const form = document.querySelector(".form form")
+  form.addEventListener("submit", (e) => {
+    e.preventDefault()
+    console.log("test")
+    const newPet = {
+      name: e.target.name.value,
+      breed: e.target.breed.value,
+      sex: e.target.sex.value,
+      age: e.target.age.value,
+      image: e.target.gif.value,
+      // images[]: e.target.image1.value,
+      // images[]: e.target.image2.value,
+      // images[]: e.target.image3.value,
+      rating: 1,
+      likes: 0
+    }
+
+    fetch("http://localhost:3000/dogs", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify(newPet) 
+    })
+    .then(resp => resp.json())
+    .then(data => data)
+  })
+
+}
+renderNewPetToServer()
+
+
 
 
 const fetchData = () => {
@@ -94,6 +132,19 @@ const fetchData = () => {
   fetch ("http://localhost:3000/cats")
   .then(resp => resp.json())
   .then(data => data.forEach(cat => renderCatImages(cat)))
+
+
+  //add pet to server
+  // fetch("http://localhost:3000/dogs", {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //     Accept: "application/json"
+  //   },
+  //   body: JSON.stringify(newPet) 
+  // })
+  // .then(resp => resp.json())
+  // .then(data => (data))
 
 }
 fetchData()
