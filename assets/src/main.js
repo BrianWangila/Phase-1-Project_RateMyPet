@@ -28,13 +28,18 @@ const renderDogImages = (dog) => {
     document.getElementById("like").innerText = dog.likes
 
     //add event listener to rate button
-    const rate = document.getElementById("rate")
+    const rate = document.querySelector("#rate")
     rate.addEventListener("click", (e) => {
       console.log("like")
-      const inputRate = document.getElementById("input")
-      inputRate.innerText = e.target.input.value
+      const inputRate = document.querySelector("#rating")
+      inputRate.innerHTML = e.target.inputs.value
     })
 
+    const like = document.querySelector("#heart")
+    like.addEventListener("click", (e) => {
+      console.log("liker")
+
+    })
 
 
   })
@@ -43,7 +48,7 @@ const renderDogImages = (dog) => {
 // renderImages()
 
 
-
+//
 const renderCatImages = (cat) => {
   const images = document.getElementById("slide2")
   const img = document.createElement("img")
