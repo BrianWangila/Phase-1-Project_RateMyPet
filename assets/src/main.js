@@ -1,4 +1,23 @@
+//Rate my Pet  by Brian
 
-fetch("https://brianwangila.github.io/Phase-1-Project_RateMyPet/db.json")
+const renderImages = (dog) => {
+  const images = document.getElementById("slide")
+  const img = document.createElement("img")
+  images.appendChild(img)
+  img.src = dog.image
+
+}
+// renderImages()
+
+
+
+
+
+
+
+
+
+fetch("http://localhost:3000/dogs")
 .then(resp => resp.json())
-.then(data => console.log(data))
+
+.then(data => data.forEach(dog => renderImages(dog)))

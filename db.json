@@ -1,7 +1,6 @@
 {
-    "pets": [
-    {
-      "dogs": [
+    "dogs": [
+    
         {
           "id": "2",
           "name": "Bella",
@@ -51,11 +50,11 @@
           "rating": 4,
           "likes": 125
         }
-      ]
-    },
-    {
+  ],
+
+
+  "cats": [
       
-      "cats": [
         {
           "id": "1",
           "name": "Charlie",
@@ -71,6 +70,7 @@
           "rating": 4.5,
           "likes": 115
         },
+
         {
           "id": "3",
           "name": "Kristin",
@@ -87,6 +87,7 @@
           "rating": 4.4,
           "likes": 90
         },
+        
         {
           "id": "5",
           "name": "Kettie",
@@ -103,8 +104,5 @@
           "rating": 4,
           "likes": 125
         }
-      ]
-      
-    }
   ]
 }
