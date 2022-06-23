@@ -66,6 +66,8 @@ const renderDogImages = (dog) => {
         rating: 1,
         likes: 0
       }
+
+      // add dog pet to page
       fetch("http://localhost:3000/dogs", {
         method: "POST",
         headers: {
@@ -78,13 +80,15 @@ const renderDogImages = (dog) => {
       .then(dog => (dog))
     })
 
+    //delete an animal from the page
+
+
   })
 
 }
-// renderImages()
 
 
-//
+//cat category
 const renderCatImages = (cat) => {
   const images = document.getElementById("slide2")
   const img = document.createElement("img")
@@ -123,82 +127,77 @@ const renderCatImages = (cat) => {
 
     })
 
+    //add cat pets to page
+    const form = document.querySelector("form")
+    form.addEventListener("submit", (e) => {
+      e.preventDefault()
+      const category = e.target.catDog.value
+  
+      const newPet = {
+        name: e.target.petName.value,
+        breed: e.target.breed.value,
+        sex: e.target.sex.value,
+        age: e.target.age.value,
+        image: e.target.gif.value,
+        images: {
+          image1: e.target.link1.value,
+          image2: e.target.link2.value,
+          image3: e.target.link3.value,
+        },
+        rating: 1,
+        likes: 0
+      }
+      fetch("http://localhost:3000/cats", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(newPet) 
+      })
+      .then(resp => resp.json())
+      .then(cat => (cat))
+    })
+
+    //remove pet from page
+    const deletePet = document.getElementById("remove")
+    deletePet.addEventListener("click", (e) => {
+      console.log("delete")
+      const card = document.getElementById("card")
+      img.remove()
+
+      //DELETE method
+      fetch(`http://localhost:3000/cats`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        }
+        .then(resp => resp.json())
+        .then(dog => (dog))
+      })
+    })
   })
 
 }
-//renderCatImages()
 
-
-
-//add new pet
-// const renderNewPetToServer = () => {
-//   const form = document.querySelector("form")
-//   form.addEventListener("submit", (e) => {
-//     e.preventDefault()
-//     const category = e.target.catDog.value
-
-//     const newPet = {
-//       name: e.target.petName.value,
-//       breed: e.target.breed.value,
-//       sex: e.target.sex.value,
-//       age: e.target.age.value,
-//       image: e.target.gif.value,
-//       images: {
-//         image1: e.target.link1.value,
-//         image2: e.target.link2.value,
-//         image3: e.target.link3.value,
-//       },
-//       rating: 1,
-//       likes: 0
-//     }
-    
-
-//     // fetch("http://localhost:3000/dogs", {
-//     //   method: "POST",
-//     //   headers: {
-//     //     "Content-Type": "application/json",
-//     //     Accept: "application/json"
-//     //   },
-//     //   body: JSON.stringify(newPet) 
-//     // })
-//     // .then(resp => resp.json())
-//     // .then(data => data)
-
-//   })
-
-// }
-// renderNewPetToServer()
-
-// else if (category === "cat" || "Cat"){
-      
-//   fetch("http://localhost:3000/cats", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//       Accept: "application/json"
-//     },
-//     body: JSON.stringify(newPet) 
-//   })
-//   .then(resp => resp.json())
-//   .then(data => data)
-// }
 
 
 
 
 const fetchData = () => {
-  fetch("http://localhost:3000/dogs")
+  fetch("https://brianwangila.github.io/Phase-1-Project_RateMyPet/db.json")
   .then(resp => resp.json())
   .then(data => data.forEach(dog => renderDogImages(dog)))
 
 
-  fetch ("http://localhost:3000/cats")
+  fetch ("https://brianwangila.github.io/Phase-1-Project_RateMyPet/db.json")
   .then(resp => resp.json())
   .then(data => data.forEach(cat => renderCatImages(cat)))
 
 
-  //add pet to server
-  // fetch("http://localhost:3000/dogs", {
+    //add pet animal to page
+  // fetch(`http://localhost:3000/dogs/${newPet.id}`, {
   //   method: "POST",
   //   headers: {
   //     "Content-Type": "application/json",
@@ -207,7 +206,7 @@ const fetchData = () => {
   //   body: JSON.stringify(newPet) 
   // })
   // .then(resp => resp.json())
-  // .then(dog => (dog))
+  // .then(dog => renderDogImages(dog))
 
 }
 fetchData()

@@ -63,21 +63,52 @@
       "id": "MxjvcNA"
     },
     {
-      "name": "Nancy",
-      "breed": "Main coon",
-      "sex": "female",
-      "age": "1 year",
-      "image": "https://media2.giphy.com/media/jUKBVRKJwoB9fC8g8p/giphy.gif",
+      "name": "",
+      "breed": "",
+      "sex": "",
+      "age": "",
+      "image": "",
       "images": {
-        "image1": "https://www.guideposts.org/sites/default/files/styles/bynder_webimage/public/story/blackcat_marquee_0.jpg",
-        "image2": "https://149366112.v2.pressablecdn.com/wp-content/uploads/2020/04/shutterstock_1037646616-scaled.jpg",
-        "image3": "https://static.booktopia.com.au/internals/9781975438456-1.jpg"
+        "image1": "",
+        "image2": "",
+        "image3": ""
       },
       "rating": 1,
       "likes": 0,
-      "id": "LHi4DHs"
+      "id": "YckAV97"
+    },
+    {
+      "name": "",
+      "breed": "",
+      "sex": "",
+      "age": "",
+      "image": "",
+      "images": {
+        "image1": "",
+        "image2": "",
+        "image3": ""
+      },
+      "rating": 1,
+      "likes": 0,
+      "id": "oJv8Hap"
+    },
+    {
+      "name": "",
+      "breed": "",
+      "sex": "",
+      "age": "",
+      "image": "",
+      "images": {
+        "image1": "",
+        "image2": "",
+        "image3": ""
+      },
+      "rating": 1,
+      "likes": 0,
+      "id": "m33pPTL"
     }
   ],
+
   "cats": [
     {
       "id": "5",
@@ -123,6 +154,96 @@
       },
       "rating": 4,
       "likes": 125
+    },
+    {
+      "name": "Nancy",
+      "breed": "Main coon",
+      "sex": "Female",
+      "age": "1 year",
+      "image": "https://media2.giphy.com/media/jUKBVRKJwoB9fC8g8p/giphy.gif",
+      "images": {
+        "image1": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
+        "image2": "https://149366112.v2.pressablecdn.com/wp-content/uploads/2020/04/shutterstock_1037646616-scaled.jpg",
+        "image3": "https://static.booktopia.com.au/internals/9781975438456-1.jpg"
+      },
+      "rating": 1,
+      "likes": 0,
+      "id": "_k1zEZI"
+    },
+    {
+      "name": "",
+      "breed": "",
+      "sex": "",
+      "age": "",
+      "image": "",
+      "images": {
+        "image1": "",
+        "image2": "",
+        "image3": ""
+      },
+      "rating": 1,
+      "likes": 0,
+      "id": "5cWCZkU"
+    },
+    {
+      "name": "",
+      "breed": "",
+      "sex": "",
+      "age": "",
+      "image": "",
+      "images": {
+        "image1": "",
+        "image2": "",
+        "image3": ""
+      },
+      "rating": 1,
+      "likes": 0,
+      "id": "dwoQ-wD"
+    },
+    {
+      "name": "",
+      "breed": "",
+      "sex": "",
+      "age": "",
+      "image": "",
+      "images": {
+        "image1": "",
+        "image2": "",
+        "image3": ""
+      },
+      "rating": 1,
+      "likes": 0,
+      "id": "lRwzw7Z"
+    },
+    {
+      "name": "",
+      "breed": "",
+      "sex": "",
+      "age": "",
+      "image": "",
+      "images": {
+        "image1": "",
+        "image2": "",
+        "image3": ""
+      },
+      "rating": 1,
+      "likes": 0,
+      "id": "7F2WEu6"
+    },
+    {
+      "name": "",
+      "breed": "",
+      "sex": "",
+      "age": "",
+      "image": "",
+      "images": {
+        "image1": "",
+        "image2": "",
+        "image3": ""
+      },
+      "rating": 1,
+      "likes": 0,
+      "id": "DfFcePN"
     }
   ]
 }
