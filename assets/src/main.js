@@ -1,5 +1,6 @@
 //Rate my Pet  by Brian
 
+
 const renderDogImages = (dog) => {
   const images = document.getElementById("slide")
   const img = document.createElement("img")
@@ -40,9 +41,41 @@ const renderDogImages = (dog) => {
       e.preventDefault()
       console.log("liker")
       const liker = document.getElementById("like")
-      liker.innerText = dog.likes + 1
-      like.style.color = "red"
 
+      like.style.color = "red"
+      liker.innerText = dog.likes + 1
+
+    })
+
+    const form = document.querySelector("form")
+    form.addEventListener("submit", (e) => {
+      e.preventDefault()
+      const category = e.target.catDog.value
+  
+      const newPet = {
+        name: e.target.petName.value,
+        breed: e.target.breed.value,
+        sex: e.target.sex.value,
+        age: e.target.age.value,
+        image: e.target.gif.value,
+        images: {
+          image1: e.target.link1.value,
+          image2: e.target.link2.value,
+          image3: e.target.link3.value,
+        },
+        rating: 1,
+        likes: 0
+      }
+      fetch("http://localhost:3000/dogs", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(newPet) 
+      })
+      .then(resp => resp.json())
+      .then(dog => (dog))
     })
 
   })
@@ -79,6 +112,17 @@ const renderCatImages = (cat) => {
     document.getElementById("rating").innerText = cat.rating
     document.getElementById("like").innerText = cat.likes
 
+
+    const like = document.querySelector("#heart")
+    like.addEventListener("click", (e) => {
+      e.preventDefault()
+      console.log("liker")
+      const liker = document.getElementById("like")
+      liker.innerText = cat.likes + 1
+      like.style.color = "red"
+
+    })
+
   })
 
 }
@@ -87,38 +131,57 @@ const renderCatImages = (cat) => {
 
 
 //add new pet
-const renderNewPetToServer = () => {
-  const form = document.querySelector(".form form")
-  form.addEventListener("submit", (e) => {
-    e.preventDefault()
-    console.log("test")
-    const newPet = {
-      name: e.target.name.value,
-      breed: e.target.breed.value,
-      sex: e.target.sex.value,
-      age: e.target.age.value,
-      image: e.target.gif.value,
-      // images[]: e.target.image1.value,
-      // images[]: e.target.image2.value,
-      // images[]: e.target.image3.value,
-      rating: 1,
-      likes: 0
-    }
+// const renderNewPetToServer = () => {
+//   const form = document.querySelector("form")
+//   form.addEventListener("submit", (e) => {
+//     e.preventDefault()
+//     const category = e.target.catDog.value
 
-    fetch("http://localhost:3000/dogs", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: JSON.stringify(newPet) 
-    })
-    .then(resp => resp.json())
-    .then(data => data)
-  })
+//     const newPet = {
+//       name: e.target.petName.value,
+//       breed: e.target.breed.value,
+//       sex: e.target.sex.value,
+//       age: e.target.age.value,
+//       image: e.target.gif.value,
+//       images: {
+//         image1: e.target.link1.value,
+//         image2: e.target.link2.value,
+//         image3: e.target.link3.value,
+//       },
+//       rating: 1,
+//       likes: 0
+//     }
+    
 
-}
-renderNewPetToServer()
+//     // fetch("http://localhost:3000/dogs", {
+//     //   method: "POST",
+//     //   headers: {
+//     //     "Content-Type": "application/json",
+//     //     Accept: "application/json"
+//     //   },
+//     //   body: JSON.stringify(newPet) 
+//     // })
+//     // .then(resp => resp.json())
+//     // .then(data => data)
+
+//   })
+
+// }
+// renderNewPetToServer()
+
+// else if (category === "cat" || "Cat"){
+      
+//   fetch("http://localhost:3000/cats", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//       Accept: "application/json"
+//     },
+//     body: JSON.stringify(newPet) 
+//   })
+//   .then(resp => resp.json())
+//   .then(data => data)
+// }
 
 
 
@@ -144,7 +207,7 @@ const fetchData = () => {
   //   body: JSON.stringify(newPet) 
   // })
   // .then(resp => resp.json())
-  // .then(data => (data))
+  // .then(dog => (dog))
 
 }
 fetchData()

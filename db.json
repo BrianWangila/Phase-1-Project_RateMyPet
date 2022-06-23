@@ -1,7 +1,7 @@
 {
   "dogs": [
     {
-      "id": "2",
+      "id": "1",
       "name": "Bella",
       "breed": "German Shepherd",
       "age": "4 years",
@@ -16,7 +16,7 @@
       "likes": 145
     },
     {
-      "id": "4",
+      "id": "2",
       "name": "Jill",
       "breed": "Bulldog",
       "age": "3.7 years",
@@ -32,7 +32,7 @@
       "likes": 100
     },
     {
-      "id": "5",
+      "id": "3",
       "name": "Jillian",
       "breed": "Chihuahua",
       "age": "2 years",
@@ -46,11 +46,41 @@
       "description": "My cat is fun and very interesting to be with. She loves kids and she's expectant",
       "rating": 4,
       "likes": 125
+    },
+    {
+      "name": "maurice",
+      "breed": "Chihuahua",
+      "sex": "male",
+      "age": "2 years",
+      "image": "https://i.pinimg.com/originals/da/54/d5/da54d5cb4207ef607cb3264d15714b42.gif",
+      "images": {
+        "image1": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*",
+        "image2": "http://wallpapercave.com/wp/JKy20Tg.jpg",
+        "image3": "https://wallpaperaccess.com/full/266689.jpg"
+      },
+      "rating": 1,
+      "likes": 0,
+      "id": "MxjvcNA"
+    },
+    {
+      "name": "Nancy",
+      "breed": "Main coon",
+      "sex": "female",
+      "age": "1 year",
+      "image": "https://media2.giphy.com/media/jUKBVRKJwoB9fC8g8p/giphy.gif",
+      "images": {
+        "image1": "https://www.guideposts.org/sites/default/files/styles/bynder_webimage/public/story/blackcat_marquee_0.jpg",
+        "image2": "https://149366112.v2.pressablecdn.com/wp-content/uploads/2020/04/shutterstock_1037646616-scaled.jpg",
+        "image3": "https://static.booktopia.com.au/internals/9781975438456-1.jpg"
+      },
+      "rating": 1,
+      "likes": 0,
+      "id": "LHi4DHs"
     }
   ],
   "cats": [
     {
-      "id": "1",
+      "id": "5",
       "name": "Charlie",
       "breed": "siamese",
       "age": "10 months",
@@ -65,7 +95,7 @@
       "likes": 115
     },
     {
-      "id": "3",
+      "id": "6",
       "name": "Kristin",
       "breed": "Bengal cat",
       "age": "3 months",
@@ -80,7 +110,7 @@
       "likes": 90
     },
     {
-      "id": "5",
+      "id": "7",
       "name": "Kettie",
       "breed": "Persian Cat",
       "age": "2 years",

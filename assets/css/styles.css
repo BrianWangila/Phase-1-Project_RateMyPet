@@ -68,6 +68,7 @@ body {
   background-color: azure;
   padding: 2vh;
   margin-top: 5px;
+  width: 15vw;
 
 }
 
@@ -81,7 +82,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  height: 50vh;
+  overflow-y: scroll;
 }
 
 .slide img {
@@ -113,6 +115,7 @@ body {
   background-color: azure;
   padding: 10px;
   border-radius: 20px;
+  width: 25vw;
 
 }
 
@@ -120,6 +123,7 @@ body {
 form input {
   padding: 5px;
   margin-top: 2px;
+  width: 10vw;
 }
 
 .image-slide {
@@ -181,7 +185,7 @@ form input {
 
 .input a {
   text-decoration: none;
-  color: rgb(163, 154, 154);
+  color: #a39a9a;
 }
 
 .card button {
