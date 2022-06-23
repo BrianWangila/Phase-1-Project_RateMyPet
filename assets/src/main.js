@@ -188,12 +188,15 @@ const renderCatImages = (cat) => {
 const fetchData = () => {
   fetch("https://brianwangila.github.io/Phase-1-Project_RateMyPet/db.json")
   .then(resp => resp.json())
-  .then(data => data.forEach(dog => renderDogImages(dog)))
+  .then(data => data.forEach((dog) => renderDogImages(dog)))
 
 
-  fetch ("https://brianwangila.github.io/Phase-1-Project_RateMyPet/db.json")
+  fetch ("http://localhost:3000/cats")
   .then(resp => resp.json())
   .then(data => data.forEach(cat => renderCatImages(cat)))
+
+
+
 
 
     //add pet animal to page
