@@ -54,7 +54,7 @@ body {
   padding: 2vh;
   min-height: 50vh;
   margin-bottom: 4vh;
-  background-image: url("");
+  
 
 }
 
@@ -94,6 +94,17 @@ body {
   margin-top: 10px;
   border-radius: 10px;
 }
+
+section .bg-img {
+  background-image: url("../images/catdog.jpg");
+  background-size:cover;
+  width: 50vw;
+  height: 100vh;
+  
+  margin: auto;
+
+}
+
 
 .body .right {
   padding: 5vh;

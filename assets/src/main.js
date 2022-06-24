@@ -31,6 +31,9 @@ const renderDogImages = (dog) => {
 
     const rightSide = document.querySelector("#right-section")
     rightSide.style.visibility = "visible"
+    
+    const bgImg = document.querySelector("#bg-img")
+    bgImg.style.visibility = "hidden"
 
     //add event listener to rate button
     const rate = document.querySelector("#rate")
