@@ -1,5 +1,6 @@
 //Rate my Pet  by Brian
-
+const dogData = "https://brianwangila.github.io/Phase-1-Project_RateMyPet/db.json"
+const catData = "https://brianwangila.github.io/Phase-1-Project_RateMyPet/db.json"
 
 const renderDogImages = (dog) => {
   const images = document.getElementById("slide")
@@ -68,7 +69,7 @@ const renderDogImages = (dog) => {
       }
 
       // add dog pet to page
-      fetch("http://localhost:3000/dogs", {
+      fetch(dogData, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -147,7 +148,7 @@ const renderCatImages = (cat) => {
         rating: 1,
         likes: 0
       }
-      fetch("http://localhost:3000/cats", {
+      fetch(catData, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -167,7 +168,7 @@ const renderCatImages = (cat) => {
       img.remove()
 
       //DELETE method
-      fetch(`http://localhost:3000/cats`, {
+      fetch(`${catData}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -186,16 +187,16 @@ const renderCatImages = (cat) => {
 
 
 const fetchData = () => {
-  fetch("https://brianwangila.github.io/Phase-1-Project_RateMyPet/db.json")
+  fetch(dogData)
   .then(resp => resp.json())
-  // .then(data => console.log(data))
-  .then(data => data.forEach((dog) => renderDogImages(dog)))
+  // .then(data => console.log(data[0]))
+  .then(data => data[0].forEach((dog) => renderDogImages(dog)))
 
 
-  fetch ("http://localhost:3000/cats")
+  fetch (catData)
   .then(resp => resp.json())
-  // .then(data => console.log(data))
-  .then(data => data.forEach(cat => renderCatImages(cat)))
+  // .then(data => console.log(data[1]))
+  .then(data => data[1].forEach(cat => renderCatImages(cat)))
 
 
 
