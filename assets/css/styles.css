@@ -66,7 +66,7 @@ body {
 
 .left-section .images {
   background-color: azure;
-  padding: 2vh;
+  padding: 1vh;
   margin-top: 5px;
   width: 22vw;
   border-radius: 20px;
@@ -88,10 +88,10 @@ body {
 }
 
 .slide img {
-  width: 15vw;
-  height: 20vh;
+  width: 17vw;
+  height: 22vh;
   margin-top: 10px;
-
+  border-radius: 10px;
 }
 
 .body .right {
@@ -102,6 +102,7 @@ body {
   margin-left: 5vw;
   justify-content: center;
   text-align: center;
+  visibility: hidden;
 
 }
 
@@ -242,3 +243,4 @@ footer .socials ul li {
   padding-top: 2vh;
 
 }
+

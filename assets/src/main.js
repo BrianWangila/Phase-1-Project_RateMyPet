@@ -112,9 +112,6 @@ const renderDogImages = (dog) => {
       //   .then(dog => (dog))
       // })
     })
-
-
-    // location.reload()
   })
 
 }
@@ -236,10 +233,6 @@ const fetchData = () => {
   // .then(data => console.log(data[1]))
   .then(data => data[1].forEach(cat => renderCatImages(cat)))
 
-
-
-
-
     //add pet animal to page
   // fetch(`http://localhost:3000/dogs/${newPet.id}`, {
   //   method: "POST",
@@ -254,3 +247,4 @@ const fetchData = () => {
 
 }
 fetchData()
+
