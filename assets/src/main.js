@@ -192,10 +192,10 @@ const fetchData = () => {
   // .then(data => data.forEach((dog) => renderDogImages(dog)))
 
 
-  fetch ("http://localhost:3000/cats")
+  fetch ("http://localhost:3000/dogs")
   .then(resp => resp.json())
-  // .then(data => console.log(data))
-  .then(data => data.forEach(cat => renderCatImages(cat)))
+  .then(data => console.log(data))
+  // .then(data => data.forEach(cat => renderCatImages(cat)))
 
 
 
