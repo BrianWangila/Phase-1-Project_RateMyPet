@@ -111,7 +111,6 @@ section .bg-img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 5vw;
   justify-content: center;
   text-align: center;
   visibility: hidden;
