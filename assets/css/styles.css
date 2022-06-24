@@ -143,6 +143,7 @@ form input {
   padding: 5px;
   margin-top: 2px;
   width: 10vw;
+  border: 1px solid #999ea1;
 }
 
 .image-slide {
