@@ -51,8 +51,6 @@ const renderDogImages = (dog) => {
     //adding like functionality
     const like = document.querySelector("#thumbsUp")
     like.addEventListener("click", (e) => {
-      e.preventDefault()
-      console.log("liker")
       const liker = document.getElementById("like")
       
       like.style.color = "red"
@@ -64,6 +62,9 @@ const renderDogImages = (dog) => {
     const down = document.querySelector("#thumbsDown")
     down.addEventListener("click", () => {
       console.log("unlike")
+      down.style.color = "red"
+      liker.innerText = liker.innerText - 1
+
     })
 
 
