@@ -16,9 +16,9 @@ const renderDogImages = (dog) => {
     details.innerHTML = `
     <li>Breed: <span>${dog.breed}</span></li>
     <li>Breed: <span>${dog.sex}</span></li>
-    <li>Breed: <span>${dog.age}</span></li>
-    
-    `
+    <li>Breed: <span>${dog.age}</span></li>`
+
+
     const slide = document.getElementById("image-slide")
     slide.innerHTML = `
     <img src=${dog.images.image1}>
@@ -28,6 +28,9 @@ const renderDogImages = (dog) => {
     
     document.getElementById("rating").innerText = dog.rating
     document.getElementById("like").innerText = dog.likes
+
+    const rightSide = document.querySelector("#right-section")
+    rightSide.style.visibility = "visible"
 
     //add event listener to rate button
     const rate = document.querySelector("#rate")
@@ -90,7 +93,8 @@ const renderDogImages = (dog) => {
         },
         body: JSON.stringify(newPet) 
       })
-      .then(resp => resp.json())
+      .    // location.reload()
+      then(resp => resp.json())
       .then(dog => (dog))
     })
 
@@ -213,6 +217,7 @@ const renderCatImages = (cat) => {
       //   .then(dog => (dog))
       // })
     })
+
   })
 
 }
