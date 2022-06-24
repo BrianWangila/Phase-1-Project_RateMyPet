@@ -61,51 +61,6 @@
       "rating": 1,
       "likes": 0,
       "id": "MxjvcNA"
-    },
-    {
-      "name": "",
-      "breed": "",
-      "sex": "",
-      "age": "",
-      "image": "",
-      "images": {
-        "image1": "",
-        "image2": "",
-        "image3": ""
-      },
-      "rating": 1,
-      "likes": 0,
-      "id": "YckAV97"
-    },
-    {
-      "name": "",
-      "breed": "",
-      "sex": "",
-      "age": "",
-      "image": "",
-      "images": {
-        "image1": "",
-        "image2": "",
-        "image3": ""
-      },
-      "rating": 1,
-      "likes": 0,
-      "id": "oJv8Hap"
-    },
-    {
-      "name": "",
-      "breed": "",
-      "sex": "",
-      "age": "",
-      "image": "",
-      "images": {
-        "image1": "",
-        "image2": "",
-        "image3": ""
-      },
-      "rating": 1,
-      "likes": 0,
-      "id": "m33pPTL"
     }
   ],
 
@@ -169,81 +124,6 @@
       "rating": 1,
       "likes": 0,
       "id": "_k1zEZI"
-    },
-    {
-      "name": "",
-      "breed": "",
-      "sex": "",
-      "age": "",
-      "image": "",
-      "images": {
-        "image1": "",
-        "image2": "",
-        "image3": ""
-      },
-      "rating": 1,
-      "likes": 0,
-      "id": "5cWCZkU"
-    },
-    {
-      "name": "",
-      "breed": "",
-      "sex": "",
-      "age": "",
-      "image": "",
-      "images": {
-        "image1": "",
-        "image2": "",
-        "image3": ""
-      },
-      "rating": 1,
-      "likes": 0,
-      "id": "dwoQ-wD"
-    },
-    {
-      "name": "",
-      "breed": "",
-      "sex": "",
-      "age": "",
-      "image": "",
-      "images": {
-        "image1": "",
-        "image2": "",
-        "image3": ""
-      },
-      "rating": 1,
-      "likes": 0,
-      "id": "lRwzw7Z"
-    },
-    {
-      "name": "",
-      "breed": "",
-      "sex": "",
-      "age": "",
-      "image": "",
-      "images": {
-        "image1": "",
-        "image2": "",
-        "image3": ""
-      },
-      "rating": 1,
-      "likes": 0,
-      "id": "7F2WEu6"
-    },
-    {
-      "name": "",
-      "breed": "",
-      "sex": "",
-      "age": "",
-      "image": "",
-      "images": {
-        "image1": "",
-        "image2": "",
-        "image3": ""
-      },
-      "rating": 1,
-      "likes": 0,
-      "id": "DfFcePN"
     }
   ]
 ]
