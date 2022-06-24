@@ -154,6 +154,11 @@ const renderCatImages = (cat) => {
     document.getElementById("rating").innerText = cat.rating
     document.getElementById("like").innerText = cat.likes
 
+    const rightSide = document.querySelector("#right-section")
+    rightSide.style.visibility = "visible"
+    
+    const bgImg = document.querySelector("#bg-img")
+    bgImg.style.visibility = "hidden"
 
     const like = document.querySelector("#thumbsUp")
     like.addEventListener("click", (e) => {
