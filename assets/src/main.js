@@ -32,23 +32,36 @@ const renderDogImages = (dog) => {
     //add event listener to rate button
     const rate = document.querySelector("#rate")
     rate.addEventListener("click", (e) => {
-      console.log("like")
       const inputRate = document.querySelector("#rating")
-      inputRate.innerHTML = `${e.target.inputs.value}`
+      const enterRate = document.getElementById("inputs")
+      if (enterRate.value >= 1 && enterRate.value <= 5) {
+        inputRate.innerHTML = enterRate.value
+      } else {
+        alert("Invalid rating")
+      }
+      
     })
 
-    const like = document.querySelector("#heart")
+    //adding like functionality
+    const like = document.querySelector("#thumbsUp")
     like.addEventListener("click", (e) => {
       e.preventDefault()
       console.log("liker")
       const liker = document.getElementById("like")
-
+      
       like.style.color = "red"
       liker.innerText = dog.likes + 1
 
     })
 
-    const form = document.querySelector("form")
+    //adding unlike functionality
+    const down = document.querySelector("#thumbsDown")
+    down.addEventListener("click", () => {
+      console.log("unlike")
+    })
+
+
+    const form = document.querySelector(".form form")
     form.addEventListener("submit", (e) => {
       e.preventDefault()
       const category = e.target.catDog.value
@@ -82,11 +95,30 @@ const renderDogImages = (dog) => {
     })
 
     //delete an animal from the page
+    const deletePet = document.getElementById("remove")
+    deletePet.addEventListener("click", (e) => {
+      console.log("delete")
+      const card = document.getElementById("card")
+      img.remove()
+
+      //DELETE method
+      // fetch(`${dogData}`, {
+      //   method: "DELETE",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //     Accept: "application/json"
+      //   }
+      //   .then(resp => resp.json())
+      //   .then(dog => (dog))
+      // })
+    })
 
 
+    // location.reload()
   })
 
 }
+
 
 
 //cat category
@@ -118,7 +150,7 @@ const renderCatImages = (cat) => {
     document.getElementById("like").innerText = cat.likes
 
 
-    const like = document.querySelector("#heart")
+    const like = document.querySelector("#thumbsUp")
     like.addEventListener("click", (e) => {
       e.preventDefault()
       console.log("liker")
@@ -127,6 +159,11 @@ const renderCatImages = (cat) => {
       like.style.color = "red"
 
     })
+    const down = document.querySelector("#thumbsDown")
+    down.addEventListener("click", () => {
+      console.log("unlike")
+    })
+
 
     //add cat pets to page
     const form = document.querySelector("form")
@@ -151,7 +188,8 @@ const renderCatImages = (cat) => {
       fetch(catData, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json", 
+          // "Access-Control-Allow-Origin": "*",
           Accept: "application/json"
         },
         body: JSON.stringify(newPet) 
@@ -168,15 +206,15 @@ const renderCatImages = (cat) => {
       img.remove()
 
       //DELETE method
-      fetch(`${catData}`, {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json"
-        }
-        .then(resp => resp.json())
-        .then(dog => (dog))
-      })
+      // fetch(`${catData}`, {
+      //   method: "DELETE",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //     Accept: "application/json"
+      //   }
+      //   .then(resp => resp.json())
+      //   .then(dog => (dog))
+      // })
     })
   })
 

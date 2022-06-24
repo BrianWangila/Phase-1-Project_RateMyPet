@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Actor&family=Adamina&family=Nunito&family=Poppins&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/327b6324f1.js" crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <link rel="stylesheet" href="./assets/css/styles.css">
   <title>Rate My Pet</title>
 </head>
@@ -77,9 +80,15 @@
             <P><span id="like">10 </span> likes</P>
           </div>
           <div class="input">
-            <input type="number" id="inputs">
-            <button id="rate">Rate</button>
-            <a href=""id="heart" >&hearts; </a>
+            <div>
+              <input type="number" id="inputs">
+              <button id="rate">Rate</button>
+            </div>
+            <div id="thumbs">
+              <i id="thumbsUp" class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+              <i id="thumbsDown" class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+            </div>
+            <!-- <a href=""id="heart" >&hearts; </a> -->
           </div>
           <p> Interesting in Buying?</p>
           <button type="button" id="remove">Remove from List</button>
